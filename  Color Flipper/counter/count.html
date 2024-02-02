@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #cccccc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#counter-board{
+    font-size: 100px;
+}
+
+.buttons-section button{
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>counter</h1>
+        <section class="counter">
+            <!-- where the counter will be displayed-->
+            <p id="counter-board">0</p>
+        </section>
+        <!-- Button section -->
+        <section class="buttons-section">
+            <button id="decrease-btn" class="btn decrease">Decrease</button>
+            <button id="increase-btn" class="btn increase">Increase</button>
+            <button id="reset-btn" class="btn reset">Reset</button>
+        </section>
+    </main>
+</body>
+<script src="count.js"></script>
+</html>
